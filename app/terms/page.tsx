@@ -473,6 +473,13 @@ export default function TermsAndConditions() {
               >
                 Terms and Conditions
               </Link>
+              <span>•</span>
+              <Link 
+                href="/delete-account" 
+                className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors"
+              >
+                Delete Account
+              </Link>
             </div>
           </div>
         </div>

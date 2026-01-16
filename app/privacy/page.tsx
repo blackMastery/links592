@@ -172,7 +172,15 @@ export default function PrivacyPolicy() {
               <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 ml-4">
                 <li>Access your personal information</li>
                 <li>Correct inaccurate or incomplete information</li>
-                <li>Request deletion of your data</li>
+                <li>
+                  Request deletion of your data -{" "}
+                  <Link 
+                    href="/delete-account" 
+                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    learn more about account deletion
+                  </Link>
+                </li>
                 <li>Opt-out of certain data collection practices</li>
                 <li>Export your data</li>
               </ul>
@@ -184,6 +192,14 @@ export default function PrivacyPolicy() {
                 >
                   support@links592.gy
                 </a>
+                {" "}or visit our{" "}
+                <Link 
+                  href="/delete-account" 
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  account deletion page
+                </Link>
+                {" "}to request account deletion.
               </p>
             </section>
 
@@ -289,6 +305,13 @@ export default function PrivacyPolicy() {
                 className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors"
               >
                 Terms and Conditions
+              </Link>
+              <span>•</span>
+              <Link 
+                href="/delete-account" 
+                className="hover:text-gray-900 dark:hover:text-gray-200 transition-colors"
+              >
+                Delete Account
               </Link>
             </div>
           </div>
