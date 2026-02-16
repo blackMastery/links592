@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs";
-import { cookies } from "next/headers";
+import { createClient } from "@/lib/supabase/server";
 import { mmgService } from "@/lib/mmg";
 
 interface CheckoutRequest {
@@ -25,7 +24,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const supabase = createRouteHandlerClient({ cookies });
+    const supabase = await createClient();
     console.log("[MMG checkout] Supabase client created");
 
     // Get the authorization header

@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs";
-import { cookies } from "next/headers";
+import { createClient } from "@/lib/supabase/server";
 import { mmgService } from "@/lib/mmg";
 
 const SUBSCRIPTION_TYPES = ["rider_monthly", "driver_monthly"] as const;
@@ -43,7 +42,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const supabase = createRouteHandlerClient({ cookies });
+    const supabase = await createClient();
     console.log("[MMG confirm-payment] Supabase client created");
 
     const authHeader = req.headers.get("authorization");

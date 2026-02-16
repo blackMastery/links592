@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
-import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
-import { cookies } from 'next/headers';
+import { createClient } from '@/lib/supabase/server';
 import { decrypt } from '@/lib/encryption';
 
 interface DecryptedPaymentResponse {
@@ -14,7 +13,7 @@ interface DecryptedPaymentResponse {
 export async function GET(req: Request) {
   try {
     console.log("[MMG webhook] GET request received");
-    const supabase = createRouteHandlerClient({ cookies });
+    const supabase = await createClient();
     console.log("[MMG webhook] Supabase client created");
 
     // Extract encrypted token from URL query parameters
