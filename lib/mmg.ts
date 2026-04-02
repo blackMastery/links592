@@ -67,12 +67,13 @@ export class MMGService {
       return ecommerceTokenCache.accessToken;
     }
 
-    const baseUrl =
-      process.env.MMG_ECOMMERCE_URL || "https://mwallet.mmgtest.net";
+    const baseUrl = "https://ecommerce.mymmg.gy";
     const apiKey = process.env.MMG_ECOMMERCE_API_KEY;
     const username = process.env.MMG_ECOMMERCE_USERNAME;
     const password = process.env.MMG_ECOMMERCE_PASSWORD;
-
+    console.log("🚀 ~ MMGService ~ getEcommerceToken ~ username:", username)
+    console.log("🚀 ~ MMGService ~ getEcommerceToken ~ password:", password)
+    console.log("🚀 ~ MMGService ~ getEcommerceToken ~ apiKey:", apiKey)
     if (!apiKey || !username || !password) {
       throw new Error(
         "MMG_ECOMMERCE_API_KEY, MMG_ECOMMERCE_USERNAME, and MMG_ECOMMERCE_PASSWORD are required"
@@ -80,12 +81,14 @@ export class MMGService {
     }
 
     const url = `${baseUrl}/olive/publisher/v1/e-commerce-login/mer`;
+    
     const body = new URLSearchParams({
       grant_type: "password",
       api_key: apiKey,
       username,
       password,
     }).toString();
+    console.log("🚀 ~ MMGService ~ getEcommerceToken ~ body:", body)
 
     const res = await fetch(url, {
       method: "POST",
@@ -118,6 +121,8 @@ export class MMGService {
     const baseUrl =
       process.env.MMG_ECOMMERCE_URL || "https://mwallet.mmgtest.net";
     const url = `${baseUrl}/olive/publisher/v1/e-merchant-initiated-transactions/lookup?transactionId=${encodeURIComponent(transactionId)}`;
+    console.log("🚀 ~ MMGService ~ getEcommerceToken ~ url:", url)
+    console.log("🚀 ~ MMGService ~ getEcommerceToken ~ url:", url)
 
     const mid = process.env.MMG_WSS_MID;
     const mkey = process.env.MMG_WSS_MKEY;
