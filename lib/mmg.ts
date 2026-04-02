@@ -92,6 +92,7 @@ export class MMGService {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body,
     });
+    console.log("🚀 ~ MMGService ~ getEcommerceToken ~ res:", res)
 
     if (!res.ok) {
       const text = await res.text();
@@ -113,6 +114,7 @@ export class MMGService {
    */
   async lookupTransaction(transactionId: string): Promise<MMGLookupResult> {
     const token = await this.getEcommerceToken();
+    console.log("🚀 ~ MMGService ~ lookupTransaction ~ token:", token)
     const baseUrl =
       process.env.MMG_ECOMMERCE_URL || "https://mwallet.mmgtest.net";
     const url = `${baseUrl}/olive/publisher/v1/e-merchant-initiated-transactions/lookup?transactionId=${encodeURIComponent(transactionId)}`;
