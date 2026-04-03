@@ -155,7 +155,10 @@ export class MMGService {
       );
     }
 
-    const data = (await res.json()) as MMGLookupResult;
+    const raw = await res.json();
+    console.log("[MMG lookupTransaction] raw response:", JSON.stringify(raw));
+    // MMG may wrap the result in a parent object — unwrap if needed
+    const data = (raw?.data ?? raw) as MMGLookupResult;
     if (data.transactionStatus?.toLowerCase() !== "successful") {
       throw new Error(
         `Transaction not successful: status=${data.transactionStatus}`
