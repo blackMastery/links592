@@ -117,12 +117,9 @@ export class MMGService {
    */
   async lookupTransaction(transactionId: string): Promise<MMGLookupResult> {
     const token = await this.getEcommerceToken();
-    console.log("🚀 ~ MMGService ~ lookupTransaction ~ token:", token)
-    const baseUrl =
-      process.env.MMG_ECOMMERCE_URL || "https://mwallet.mmgtest.net";
+    const baseUrl = "https://ecommerce.mymmg.gy";
     const url = `${baseUrl}/olive/publisher/v1/e-merchant-initiated-transactions/lookup?transactionId=${encodeURIComponent(transactionId)}`;
-    console.log("🚀 ~ MMGService ~ getEcommerceToken ~ url:", url)
-    console.log("🚀 ~ MMGService ~ getEcommerceToken ~ url:", url)
+    console.log("[MMG lookupTransaction] url:", url);
 
     const mid = process.env.MMG_WSS_MID;
     const mkey = process.env.MMG_WSS_MKEY;
@@ -148,17 +145,17 @@ export class MMGService {
       },
     });
 
-    if (!res.ok) {
-      const text = await res.text();
+    const raw = await res.json();
+    console.log("[MMG lookupTransaction] raw response:", JSON.stringify(raw));
+
+    if (!res.ok || raw?.statusCode !== undefined && raw.statusCode !== "200" && raw.response === null) {
       throw new Error(
-        `MMG transaction lookup failed: ${res.status} ${text}`
+        `MMG transaction lookup failed: ${raw?.statusCode ?? res.status} ${raw?.message ?? ""}`
       );
     }
 
-    const raw = await res.json();
-    console.log("[MMG lookupTransaction] raw response:", JSON.stringify(raw));
-    // MMG may wrap the result in a parent object — unwrap if needed
-    const data = (raw?.data ?? raw) as MMGLookupResult;
+    // Successful responses wrap the transaction data in a `response` field
+    const data = (raw?.response ?? raw) as MMGLookupResult;
     if (data.transactionStatus?.toLowerCase() !== "successful") {
       throw new Error(
         `Transaction not successful: status=${data.transactionStatus}`
