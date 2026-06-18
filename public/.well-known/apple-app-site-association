@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["B8MNPS63XG.com.darian.kevon.links.riders"],
+        "paths": ["/rider", "/rider/*"],
+        "components": [
+          { "/": "/rider" },
+          { "/": "/rider/*" }
+        ]
+      }
+    ]
+  }
+}
