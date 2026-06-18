@@ -2,23 +2,23 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white dark:bg-black">
+    <div className="min-h-screen overflow-x-clip bg-white dark:bg-black">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           {/* Coming Soon Badge */}
-          <div className="inline-flex items-center px-4 py-2 mb-6 rounded-full bg-yellow-400 dark:bg-yellow-500 text-yellow-900 dark:text-yellow-950 font-semibold text-sm sm:text-base shadow-lg animate-pulse">
-            <span className="mr-2">🚀</span>
+          <div className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 mb-4 sm:mb-6 rounded-full bg-yellow-400 dark:bg-yellow-500 text-yellow-900 dark:text-yellow-950 font-semibold text-xs sm:text-sm md:text-base shadow-lg animate-pulse">
+            <span className="mr-1.5 sm:mr-2">🚀</span>
             Coming Soon
           </div>
           
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 text-balance">
             Links 592
           </h1>
-          <p className="text-xl sm:text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 mb-4 font-semibold">
+          <p className="text-lg sm:text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 mb-3 sm:mb-4 font-semibold text-balance px-1">
             Georgetown&apos;s Trusted Transportation Platform
           </p>
-          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto text-pretty px-1">
             Connect professional drivers with riders. Zero commissions. Unlimited trips. 
             Professional service you can trust.
           </p>
@@ -26,57 +26,57 @@ export default function Home() {
       </section>
 
       {/* Driver App Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black">
+      <section className="py-10 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 text-balance">
               Links 592 Driver
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400">
               Your Path to Professional Driving
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Why Drivers Choose */}
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4 sm:mb-6">
                 Why Drivers Choose Links 592
               </h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+              <ul className="space-y-3 sm:space-y-4">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>Zero Commissions</strong> - Keep 100% of what riders pay you
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>Flexible Schedule</strong> - Work when you want, where you want
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>Professional Tools</strong> - GPS navigation, trip tracking, digital records
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>Verified Riders</strong> - All riders are verified for your safety
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>Direct Communication</strong> - Chat and call riders securely
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>Earnings Transparency</strong> - Track all your trips and income
                   </span>
                 </li>
@@ -84,11 +84,11 @@ export default function Home() {
             </div>
 
             {/* Key Features */}
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+            <div className="pt-8 md:pt-0 border-t border-gray-200 dark:border-gray-800 md:border-t-0">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4 sm:mb-6">
                 Key Features
               </h3>
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Trip Management</h4>
                   <ul className="text-gray-700 dark:text-gray-300 space-y-1 text-sm">
@@ -131,21 +131,21 @@ export default function Home() {
           </div>
 
           {/* Requirements */}
-          <div className="mt-8">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 text-center">
+          <div className="mt-8 sm:mt-10">
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-4 text-center">
               Requirements
             </h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              <span className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 max-w-xl sm:max-w-none mx-auto">
+              <span className="px-3 py-2 sm:px-4 bg-gray-100 dark:bg-gray-800 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 text-center">
                 Valid Guyana driver&apos;s license
               </span>
-              <span className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300">
+              <span className="px-3 py-2 sm:px-4 bg-gray-100 dark:bg-gray-800 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 text-center">
                 Registered vehicle with insurance
               </span>
-              <span className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300">
+              <span className="px-3 py-2 sm:px-4 bg-gray-100 dark:bg-gray-800 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 text-center">
                 Smartphone with GPS
               </span>
-              <span className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300">
+              <span className="px-3 py-2 sm:px-4 bg-gray-100 dark:bg-gray-800 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 text-center">
                 Professional driving record
               </span>
             </div>
@@ -157,57 +157,57 @@ export default function Home() {
       <div className="border-t border-gray-200 dark:border-gray-800"></div>
 
       {/* Rider App Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+      <section className="py-10 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 text-balance">
               Links 592 Rider
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400">
               Your Georgetown Transportation Solution
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Why Riders Choose */}
             <div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4 sm:mb-6">
                 Why Riders Choose Links 592
               </h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+              <ul className="space-y-3 sm:space-y-4">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>Unlimited Trips</strong> - Fixed monthly price, no per-trip charges
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>Verified Drivers</strong> - All drivers are KYC verified and rated
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>3-Day Free Trial</strong> - Test the service risk-free
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>Real-Time Tracking</strong> - Know exactly where your driver is
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>Safety First</strong> - Emergency features and trip sharing
                   </span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 mr-3 text-xl">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <span className="text-green-500 shrink-0 text-lg sm:text-xl leading-6">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
                     <strong>Professional Service</strong> - Quality drivers and vehicles
                   </span>
                 </li>
@@ -215,11 +215,11 @@ export default function Home() {
             </div>
 
             {/* Key Features */}
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+            <div className="pt-8 md:pt-0 border-t border-gray-200 dark:border-gray-700 md:border-t-0">
+              <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4 sm:mb-6">
                 Key Features
               </h3>
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 <div>
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Easy Booking</h4>
                   <ul className="text-gray-700 dark:text-gray-300 space-y-1 text-sm">
@@ -263,38 +263,38 @@ export default function Home() {
           </div>
 
           {/* Trip Types & Payment Options */}
-          <div className="mt-8 grid sm:grid-cols-2 gap-8">
+          <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
                 Trip Types
               </h3>
-              <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300 shadow-sm">
+              <div className="flex flex-wrap gap-2 sm:gap-3">
+                <span className="px-3 py-2 sm:px-4 bg-white dark:bg-gray-800 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 shadow-sm text-center">
                   Airport Transfers
                 </span>
-                <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300 shadow-sm">
+                <span className="px-3 py-2 sm:px-4 bg-white dark:bg-gray-800 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 shadow-sm text-center">
                   Short Trips (City)
                 </span>
-                <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300 shadow-sm">
+                <span className="px-3 py-2 sm:px-4 bg-white dark:bg-gray-800 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 shadow-sm text-center">
                   Market Runs
                 </span>
-                <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300 shadow-sm">
+                <span className="px-3 py-2 sm:px-4 bg-white dark:bg-gray-800 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 shadow-sm text-center">
                   Custom Destinations
                 </span>
               </div>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4">
                 Payment Options
               </h3>
-              <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300 shadow-sm">
+              <div className="flex flex-wrap gap-2 sm:gap-3">
+                <span className="px-3 py-2 sm:px-4 bg-white dark:bg-gray-800 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 shadow-sm text-center">
                   MMG Mobile Money
                 </span>
-                <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300 shadow-sm">
+                <span className="px-3 py-2 sm:px-4 bg-white dark:bg-gray-800 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 shadow-sm text-center">
                   Cash (with driver)
                 </span>
-                <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm text-gray-700 dark:text-gray-300 shadow-sm">
+                <span className="px-3 py-2 sm:px-4 bg-white dark:bg-gray-800 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 shadow-sm text-center">
                   Direct bank payment
                 </span>
               </div>
@@ -304,43 +304,43 @@ export default function Home() {
       </section>
 
       {/* Safety & Trust Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black">
+      <section className="py-10 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-black">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 text-balance">
               Safety & Trust
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-pretty px-1">
               Your safety and security are our top priorities. We&apos;ve built comprehensive safety features 
               into every aspect of the Links 592 platform.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-gray-50 dark:bg-gray-900 rounded-lg">
-              <div className="text-4xl mb-4">🛡️</div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+            <div className="text-center p-4 sm:p-6 bg-gray-50 dark:bg-gray-900 rounded-lg">
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🛡️</div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-2 sm:mb-3">
                 Verified Users
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 text-pretty">
                 All drivers and riders undergo KYC verification for your peace of mind.
               </p>
             </div>
-            <div className="text-center p-6 bg-gray-50 dark:bg-gray-900 rounded-lg">
-              <div className="text-4xl mb-4">📍</div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+            <div className="text-center p-4 sm:p-6 bg-gray-50 dark:bg-gray-900 rounded-lg">
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">📍</div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-2 sm:mb-3">
                 Real-Time Tracking
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 text-pretty">
                 GPS tracking and trip sharing keep you connected and safe throughout your journey.
               </p>
             </div>
-            <div className="text-center p-6 bg-gray-50 dark:bg-gray-900 rounded-lg">
-              <div className="text-4xl mb-4">🚨</div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+            <div className="text-center p-4 sm:p-6 bg-gray-50 dark:bg-gray-900 rounded-lg sm:col-span-2 lg:col-span-1">
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🚨</div>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-2 sm:mb-3">
                 Emergency Support
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 text-pretty max-w-md mx-auto">
                 In-app SOS button and 24/7 support team ready to assist when you need help.
               </p>
             </div>
@@ -349,33 +349,33 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 dark:bg-black text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+      <footer className="bg-gray-900 dark:bg-black text-gray-300 py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-white font-semibold text-lg mb-4">Links 592</h3>
-              <p className="text-gray-400 text-sm">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+            <div className="text-center sm:text-left">
+              <h3 className="text-white font-semibold text-base sm:text-lg mb-3 sm:mb-4">Links 592</h3>
+              <p className="text-gray-400 text-sm text-pretty">
                 Georgetown&apos;s trusted transportation platform connecting professional 
                 drivers with riders.
               </p>
             </div>
-            <div>
-              <h3 className="text-white font-semibold text-lg mb-4">Contact</h3>
+            <div className="text-center sm:text-left">
+              <h3 className="text-white font-semibold text-base sm:text-lg mb-3 sm:mb-4">Contact</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="mailto:support@links592.gy" className="hover:text-white transition-colors">
+                  <a href="mailto:support@links592.gy" className="hover:text-white transition-colors break-all">
                     support@links592.gy
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.links592.gy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  <a href="https://www.links592.gy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors break-all">
                     www.links592.gy
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <h3 className="text-white font-semibold text-lg mb-4">Legal</h3>
+            <div className="text-center sm:text-left sm:col-span-2 md:col-span-1">
+              <h3 className="text-white font-semibold text-base sm:text-lg mb-3 sm:mb-4">Legal</h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link href="/privacy" className="hover:text-white transition-colors">
@@ -395,7 +395,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
+          <div className="border-t border-gray-800 pt-6 sm:pt-8 text-center text-xs sm:text-sm text-gray-500">
             <p>&copy; {new Date().getFullYear()} Links 592. All rights reserved.</p>
           </div>
         </div>

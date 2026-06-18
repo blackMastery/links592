@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   description: "Professional ride-hailing platform for Georgetown. Connect verified drivers with riders. Zero commissions for drivers. Unlimited trips for riders with affordable subscriptions.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
